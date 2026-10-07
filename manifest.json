@@ -3,7 +3,11 @@
   "name": "Haven Password Manager",
   "version": "0.1.0",
   "description": "A private, encrypted password vault that stays on your device.",
-  "permissions": ["storage", "activeTab", "scripting"],
+  "permissions": ["storage", "activeTab", "scripting", "alarms"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "service-worker.js"
+  },
   "action": {
     "default_title": "Haven Password Manager",
     "default_popup": "popup.html"

@@ -253,6 +253,14 @@ h1 { font: 800 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; l
 .dialog-header p { margin-top: 4px; color: var(--muted); font-size: 11px; }
 .close-button { margin: -5px -7px 0 0; }
 .entry-form { display: grid; gap: 12px; }
+.settings-form { display: grid; gap: 17px; }
+.settings-section { display: grid; gap: 10px; }
+.settings-section h3 { color: #45495a; font-size: 12px; }
+.settings-select { height: 40px; }
+.remember-setting { display: flex; align-items: flex-start; gap: 8px; color: #55596a; font-size: 11px; line-height: 1.5; }
+.remember-setting input { flex: 0 0 auto; margin: 1px 0 0; accent-color: var(--purple); }
+.settings-note { color: var(--muted); font-size: 10px; line-height: 1.5; }
+.settings-character-options { padding: 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--wash); }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 .password-tools { display: flex; align-items: center; justify-content: space-between; }
 .password-tools label { color: #4f5364; font-size: 11px; font-weight: 700; }
@@ -274,7 +282,7 @@ h1 { font: 800 22px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; l
 .detail-value { overflow-wrap: anywhere; color: #343748; font-size: 12px; }
 .detail-actions { display: flex; justify-content: space-between; gap: 8px; margin-top: 3px; }
 .detail-actions .button { min-height: 37px; font-size: 11px; }
-.detail-actions-right { display: flex; gap: 7px; }
+.detail-actions-right { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 7px; }
 .toast {
   position: fixed;
   z-index: 4;
